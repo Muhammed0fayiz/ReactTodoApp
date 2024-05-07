@@ -1,0 +1,65 @@
+import React, { useEffect } from 'react';
+import Header from './component/Header';
+import State from './component/State';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from 'react-bootstrap';
+
+function App() {
+  useEffect(() => {
+    console.log('Component mounted');
+  }, []);
+
+const states=[{name:"keyal",lan:"malu",col:"red"},{name:"keyddal",lan:"malu",col:"red"},{name:"keydddddddal",lan:"malu",col:"red"}]
+
+  
+  return (
+    <>
+     
+<State state={states}/>
+<h1 style={{color:'red'}}>hello fayiz</h1>
+<h1 className='bg-success text-white'>Some Text Here</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<Header></Header>
+    </>
+  );
+}
+
+
+
+// function Row() {
+//   return (
+//     <tr>
+//       <th>name</th>
+//       <th>place</th>
+//       <th>age</th>
+//     </tr>
+//   );
+// }
+
+// function Column() {
+//   return (
+//     <tr>
+//       <td>fayi</td>
+//       <td>ve</td>
+//       <td>2</td>
+//     </tr>
+//   );
+// }
+
+export default App;
